@@ -113,9 +113,9 @@ class Scene {
       }
     }
 
-    if (Math.random()<0.001){
-      console.dir([point,normal,eye,mat,textureColor])
-    }
+    //if (Math.random()<0.001){
+    //      console.dir([point,normal,eye,mat,textureColor])
+    //}
     // modify this so that it gets the emissive color
     // from the material
     //const emissive = new Color(0.1,0,0.5);

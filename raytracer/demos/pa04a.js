@@ -7,7 +7,7 @@ document.getElementById('title').innerHTML="pa04a"
 function runTest(){
 	canvas.width=600
 	canvas.height=600
-	const renderer = new Renderer(100,100)
+	const renderer = new Renderer(600,600)
 	const scene = new Scene('pa04a')
 
 
@@ -25,7 +25,7 @@ function runTest(){
 	mat2.texture.repeatV=1
 
   const mat3 = new Material(Color.BLACK,Color.WHITE,Color.WHITE,100)
-  mat3.emissive = new Color(0.5,0,0);
+	  mat3.emissive = new Color(0.5,0,0);
 
 
 
@@ -79,7 +79,7 @@ function runTest(){
 	light1.intensity = 0.5
 	light1.diffuseColor = Color.WHITE
 	light1.specularColor = Color.RED
-	//scene.addLight(light1)
+	scene.addLight(light1)
 
 	const light2 = new Light(new Vector3(-2,1,2))
 	light2.intensity = 0.75
